@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-rows: 120px 40px 500px 100px 35px;
     grid-template-areas: 
@@ -30,16 +30,43 @@ main {
 }
 
 #mainindex {
-    height: auto;
+    height: 500px;
     display: grid; 
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
-    'im1 art1'
-    'art2 art3'
+    'sc1 sc2'
 }
 
-section {
+#mainsyskon {
+    height: 500px;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    'sc1 sc2'
+}
+
+#mainforaldrar {
+    height: 500px;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    'sc1 sc2'
+}
+
+#mainaldre {
+    height: 500px;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    'sc1 sc2'
+}
+
+#bottom {
     grid-area: sc;
-    background: salmon;
+    background: khaki;
 }
 
 footer {
@@ -49,21 +76,18 @@ footer {
 
 article {
     background: darksalmon;
+    margin: 20px;
+    border-radius: 5px;
 }
 
 #sofiabild {
-    grid-area: im1;
+    width: 200px;
 }
 
-#art1 {
-    grid-area: art1;
+#sc1 {
+    grid-area: sc1;
 }
 
-#art2 {
-    grid-area: art2;
+#sc2 {
+    grid-area: sc2;
 }
-
-#art3 {
-    grid-area: art3;
-}
-
