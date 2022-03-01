@@ -40,28 +40,29 @@ main {
 #mainsyskon {
     height: 500px;
     display: grid; 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25%;
     grid-column-gap: 10px;
     grid-template-areas: 
-    'sc1 sc2'
+    'sc3 sc4 sc5 sc6'
 }
 
 #mainforaldrar {
     height: 500px;
     display: grid; 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33%;
     grid-column-gap: 10px;
     grid-template-areas: 
-    'sc1 sc2'
+    'sc7 sc7 sc7'
+    'sc8 sc9 sc10'
 }
 
 #mainaldre {
     height: 500px;
     display: grid; 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33%;
     grid-column-gap: 10px;
     grid-template-areas: 
-    'sc1 sc2'
+    'sc10 sc11 sc12'
 }
 
 #bottom {
@@ -81,7 +82,32 @@ article {
 }
 
 #sofiabild {
-    width: 200px;
+    width: 350px;
+    margin: 20px;
+}
+
+.klickbar {
+    width: 75px;
+    margin: 10px;
+}
+
+.syskonbild {
+    width: 170px;
+    margin: 10px;
+}
+
+.foraldrar {
+    width: 100px;
+    margin: 10px;
+}
+
+.foraldrabild {
+    width: 50px;
+    margin: 10px;
+}
+
+.aldrebild {
+    width: 50px;
 }
 
 #sc1 {
@@ -90,4 +116,45 @@ article {
 
 #sc2 {
     grid-area: sc2;
+}
+
+#sc3 {
+    grid-area: sc3;
+}
+
+#sc4 {
+    grid-area: sc4;
+}
+
+#sc5 {
+    grid-area: sc5;
+}
+
+#sc6 {
+    grid-area: sc6;
+}
+
+#sc7 {
+    grid-area: sc7;
+    display: flex;
+}
+
+#sc8 {
+    grid-area: sc8;
+}
+
+#sc9 {
+    grid-area: sc9;
+}
+
+#sc10 {
+    grid-area: sc10;
+}
+
+#sc11 {
+    grid-area: sc11;
+}
+
+#sc12 {
+    grid-area: sc12;
 }
