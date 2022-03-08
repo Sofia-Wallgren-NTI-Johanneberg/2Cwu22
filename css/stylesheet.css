@@ -16,17 +16,24 @@ body {
 
 header {
     grid-area: hd;
-    background: darkkhaki;
+    background: rgb(255,254,241);
+    background: radial-gradient(circle, rgba(255,254,241,1) 0%, rgba(255,249,195,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav{
     grid-area: nv;
-    background: salmon;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(153, 114, 29);
 }
 
 main {
     grid-area: mn;
-    background: darkkhaki;
+    background: rgb(255,249,195);
 }
 
 #mainindex {
@@ -67,47 +74,60 @@ main {
 
 #bottom {
     grid-area: sc;
-    background: khaki;
+    background: rgb(153, 114, 29);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer {
     grid-area: ft;
-    background: darkkhaki;
+    background: rgb(255, 249, 195);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 article {
-    background: darksalmon;
+    background: rgb(255, 254, 241);
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 #sofiabild {
-    width: 350px;
-    margin: 20px;
+    width: 320px;
+    margin: 5% 25% 0% 25%;
+    border-radius: 7%;
 }
 
 .klickbar {
     width: 75px;
     margin: 10px;
+    border-radius: 7%;
 }
 
 .syskonbild {
     width: 170px;
-    margin: 10px;
+    margin: 5% 22% 0% 22%;
+    border-radius: 7%;
 }
 
 .foraldrar {
     width: 100px;
+    height: 190px;
     margin: 10px;
 }
 
 .foraldrabild {
-    width: 50px;
-    margin: 10px;
+    width: 100px;
+    margin: 5% 40% 0% 35%;
+    border-radius: 7%;
 }
 
 .aldrebild {
-    width: 50px;
+    width: 300px;
+    margin: 5% 12% 0% 12%;
+    border-radius: 7%;
 }
 
 #sc1 {
@@ -157,4 +177,22 @@ article {
 
 #sc12 {
     grid-area: sc12;
+}
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+}
+
+h2 {
+    padding: 10px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+p {
+    padding: 10px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.lank {
+    color: bisque;
 }
