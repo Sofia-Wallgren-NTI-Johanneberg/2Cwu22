@@ -5,7 +5,7 @@
 body {
     width: 100%;
     display: grid;
-    grid-template-rows: 120px 40px 500px 100px 35px;
+    grid-template-rows: 120px 40px 1fr 100px 35px;
     grid-template-areas: 
     'hd'
     'nv'
@@ -37,7 +37,7 @@ main {
 }
 
 #mainindex {
-    height: 500px;
+    height: 1fr;
     display: grid; 
     grid-template-columns: 50% 50%;
     grid-template-areas: 
@@ -45,7 +45,7 @@ main {
 }
 
 #mainsyskon {
-    height: 500px;
+    height: 1fr;
     display: grid; 
     grid-template-columns: 25%;
     grid-column-gap: 10px;
@@ -54,7 +54,7 @@ main {
 }
 
 #mainforaldrar {
-    height: 500px;
+    height: 1fr;
     display: grid; 
     grid-template-columns: 33%;
     grid-column-gap: 10px;
@@ -64,7 +64,7 @@ main {
 }
 
 #mainaldre {
-    height: 500px;
+    height: 1fr;
     display: grid; 
     grid-template-columns: 33%;
     grid-column-gap: 10px;
@@ -113,14 +113,15 @@ article {
 }
 
 .foraldrar {
-    width: 100px;
+    width: 120px;
     height: 190px;
-    margin: 10px;
+    margin: 2% 5% 0% 5%;
+    border-radius: 7%;
 }
 
 .foraldrabild {
-    width: 100px;
-    margin: 5% 40% 0% 35%;
+    width: 250px;
+    margin: 5% 20% 0% 20%;
     border-radius: 7%;
 }
 
@@ -128,6 +129,14 @@ article {
     width: 300px;
     margin: 5% 12% 0% 12%;
     border-radius: 7%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu {
+    display: none;
 }
 
 #sc1 {
@@ -193,6 +202,135 @@ p {
     font-family: 'Hind Madurai', sans-serif;
 }
 
-.lank {
+a {
     color: bisque;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        grid-template-rows: 120px 40px 1fr 70px;
+        grid-template-areas: 
+        'hd'
+        'nv'
+        'mn'
+        'ft'
+    }
+
+    #mainindex {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'sc1'
+        'sc2'
+    }
+
+    #mainsyskon {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'sc3'
+        'sc4'
+        'sc5'
+        'sc6' 
+    }
+
+    #mainforaldrar {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'sc7'
+        'sc8'
+        'sc9'
+        'sc10' 
+    }
+
+    #mainaldre {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'sc10'
+        'sc11'
+        'sc12' 
+    }
+
+    #bottom {
+        display: none;
+    }
+
+    .lank {
+        display: none;
+    }
+
+    article {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+    }
+
+    #sofiabild {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+    }
+
+    .syskonbild {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+    }
+
+    .foraldrar {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+        height: auto;
+    }
+
+    .foraldrabild {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+    }
+
+    .aldrebild {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+    }
+
+    #sc7 {
+        display: unset;
+    }
+
+    .hamburger {
+        display: unset;
+        margin: 0% 10% 0% 85%;
+        z-index: 100;
+        padding: 4px;
+        border: none;
+        background: rgb(153, 114, 29);
+        color: bisque;
+        cursor: pointer;
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .menu {
+        display: unset;
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: rgb(153, 114, 29);
+        list-style: none;
+        padding-top: 4rem;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .menuitem {
+        margin: 15% 0% 20% 15%;
+    }
 }
