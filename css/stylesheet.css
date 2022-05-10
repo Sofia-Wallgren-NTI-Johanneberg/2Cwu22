@@ -57,6 +57,7 @@ main {
     grid-column-gap: 10px;
     grid-template-areas: 
     'sc7 sc7 sc7'
+    'ett ett ett'
     'sc8 sc9 sc10'
 }
 
@@ -109,15 +110,14 @@ article {
 }
 
 .foraldrar {
-    width: 120px;
-    height: 190px;
-    margin: 2% 5% 0% 5%;
+    height: 250px;
+    margin: 2% 2% 0% 2%;
     border-radius: 7%;
 }
 
 .foraldrabild {
-    width: 250px;
-    margin: 5% 20% 0% 20%;
+    height: 200px;
+    margin: 10% 20% 0% 12.5%;
     border-radius: 7%;
 }
 
@@ -185,8 +185,32 @@ article {
     grid-area: sc12;
 }
 
+.ettan {
+    grid-area: ett;
+    height: 70px;
+    background: rgb(153, 114, 29);
+}
+
+.basta {
+    margin : 0px 0px 0px 20px;
+    font-family: 'Niconne', cursive;
+    font-size: 21px;
+}
+
+.basta2 {
+    margin : 0px 0px 0px 20px;
+    padding: 0px;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+.basta3 {
+    padding: 10px 10px 0px 10px;
+}
+
 h1 {
     font-family: 'Noto Serif Display', serif;
+    font-size: 70px;
 }
 
 h2 {
@@ -197,10 +221,13 @@ h2 {
 p {
     padding: 10px;
     font-family: 'Hind Madurai', sans-serif;
+    color: rgb(61, 61, 61)
 }
 
 a {
     color: bisque;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 17px;
 }
 
 
@@ -280,6 +307,7 @@ a {
     }
 
     .foraldrabild {
+        height: unset;
         margin: 5% 10% 5% 10%;
         width: 80%;
     }
@@ -330,5 +358,10 @@ a {
 
     .menuitem {
         margin: 15% 0% 20% 15%;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
     }
 }
